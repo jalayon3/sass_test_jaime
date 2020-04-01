@@ -1,0 +1,118 @@
+@keyframes hoverMenu {
+  from {
+    background-color: #233044;
+  }
+  to {
+    background-color: #466087;
+  }
+}
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #233044;
+  position: fixed;
+  z-index: 1;
+  overflow: auto;
+}
+
+h1 {
+  font: 400 32px sans-serif;
+  width: 100%;
+  margin: 30px auto;
+}
+
+h2 {
+  font: 400 18px sans-serif;
+  color: slategray;
+}
+
+ul {
+  margin-bottom: 30px;
+  list-style-type: none;
+  background: #233044;
+}
+
+img.avatar {
+  border-radius: 50%;
+}
+
+a {
+  display: block;
+  background-color: #233044;
+  font: 12px/22px sans-serif;
+  color: #fff;
+  text-decoration: none;
+  width: 30%;
+  padding: 4px;
+}
+
+li a {
+  height: 50px;
+  background-color: #233044;
+}
+li a:hover {
+  animation-name: hoverMenu;
+  animation-duration: 1s;
+  border-left-style: solid;
+}
+li a ul.menu {
+  font-size: 0;
+  position: relative;
+  list-style: none;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  text-align: center;
+  width: 25%;
+  float: left;
+  height: 100%;
+}
+li a ul.menu html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+li a ul.menu a {
+  display: block;
+}
+li a ul.justify-table {
+  font-size: 0;
+  position: relative;
+  list-style: none;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  text-align: justify;
+  display: table;
+}
+li a ul.justify-table html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+li a ul.justify-table a {
+  display: block;
+}
+li a ul.justify-table:after {
+  display: inline-block;
+  content: "";
+  width: 100%;
+}
+li a ul.nav-bar {
+  margin-bottom: solid;
+}
+li a .fixed {
+  table-layout: fixed;
+}
+li a .auto-width {
+  width: auto;
+}
+li a .auto-width:before {
+  left: -200px;
+}
+li a .grow li {
+  width: 100%;
+  vertical-align: middle;
+}
